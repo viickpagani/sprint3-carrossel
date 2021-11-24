@@ -121,7 +121,6 @@ function setClickInst(id) {
 }
 
 function addInst(dados) {
-    instituicoes = JSON.parse(localStorage.getItem("usuarios"));
     instituicoes.push(dados);
     localStorage.setItem("usuarios", JSON.stringify(instituicoes));
 
@@ -130,7 +129,6 @@ function addInst(dados) {
 
 function carregarInst() {
     let texto = '';
-    let instituicoes = JSON.parse(localStorage.getItem("usuarios"));
 
     // Montar um bloco de informações para cada instituição
     for (i = 0; i < instituicoes.length; i++) {
