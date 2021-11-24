@@ -101,14 +101,15 @@ var db_fakeInstituicoes = {
     ]
 };
 
+var divCarrossel = document.getElementById('inst_carrossel');
+var instituicoes;
+
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 
 onload = () => {
 
     localStorage.setItem("usuarios", JSON.stringify(db_fakeInstituicoes.usuarios));
-
-    var divCarrossel = document.getElementById('inst_carrossel');
-    var instituicoes = JSON.parse(localStorage.getItem("usuarios"));
+    instituicoes = JSON.parse(localStorage.getItem("usuarios"));
 
     carregarInst();
 };
