@@ -121,6 +121,7 @@ function setClickInst(id) {
 }
 
 function addInst(dados) {
+    instituicoes = JSON.parse(localStorage.getItem("usuarios"));
     instituicoes.push(dados);
     localStorage.setItem("usuarios", JSON.stringify(instituicoes));
 
