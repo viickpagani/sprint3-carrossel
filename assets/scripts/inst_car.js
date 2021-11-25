@@ -117,13 +117,11 @@ onload = () => {
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 
 function setClickInst(id) {
-
     sessionStorage.setItem('id_clickInst', id);
     location.href = "instituicao.html";
 }
 
 function addInst(dados) {
-
     instituicoes.push(dados);
     localStorage.setItem("usuarios", JSON.stringify(instituicoes));
 
