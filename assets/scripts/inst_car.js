@@ -1,6 +1,5 @@
 var db_fakeInstituicoes = {
     "usuarios": [{
-            "id": 1,
             "nome": "Instituto Casa do Caminho",
             "user": "casacaminho",
             "logo": "assets/images/inst.png",
@@ -11,7 +10,6 @@ var db_fakeInstituicoes = {
             "descricao": "Instituição de apoio às pessoas com Câncer. Vivem de doações, inclusive o salário dos funcionários são providos por doações. Promovem bazares para angariar fundos e sempre precisam de ajuda."
         },
         {
-            "id": 2,
             "nome": "Exército de Salvação",
             "user": "salvação_army",
             "logo": "assets/images/inst.png",
@@ -22,7 +20,6 @@ var db_fakeInstituicoes = {
             "descricao": "O Exército de Salvação existe para salvar almas, edificar os santos e servir a humanidade sofredora, motivado pelo amor a Deus, em nome de Jesus, sem discriminação."
         },
         {
-            "id": 3,
             "nome": "Associação Das Famílias Carentes De Belo Horizonte",
             "user": "familiasCarentes",
             "logo": "assets/images/inst.png",
@@ -33,7 +30,6 @@ var db_fakeInstituicoes = {
             "descricao": "A Associação das Famílias Carentes de Belo Horizonte é uma entidade de direito privado, sem fins lucrativos, de caráter assistencial e filantrópico, que tem como principal finalidade amparar as famílias carentes, por meio do desenvolvimento e execução de programas sociais."
         },
         {
-            "id": 4,
             "nome": "Fundação Sara",
             "user": "fundacao_sara",
             "logo": "assets/images/inst.png",
@@ -44,7 +40,6 @@ var db_fakeInstituicoes = {
             "descricao": "Prestar assistência social às crianças e adolescentes com câncer e ser agente de promoção de conhecimentos e de melhorias do tratamento oncológico."
         },
         {
-            "id": 5,
             "nome": "Casa Santa Bernadete",
             "user": "SantaBernadete",
             "logo": "assets/images/inst.png",
@@ -55,7 +50,6 @@ var db_fakeInstituicoes = {
             "descricao": " A instituição acolhe jovens e adultos em situação de vulnerabilidade social com diagnóstico de câncer e em tratamento ambulatorial de radioterapia e/ou quimioterapia."
         },
         {
-            "id": 6,
             "nome": "Exército de Salvação",
             "user": "salvação_army",
             "logo": "assets/images/inst.png",
@@ -66,7 +60,6 @@ var db_fakeInstituicoes = {
             "descricao": ""
         },
         {
-            "id": 7,
             "nome": "Lar das velhinhas",
             "user": "velha_lar",
             "logo": "assets/images/inst.png",
@@ -77,7 +70,6 @@ var db_fakeInstituicoes = {
             "descricao": "O Centro Feminino de Longa Permanecia “Lar das Velhinhas” é uma entidade civil, filantrópica, sem fins lucrativos, de cunho social, que presta Serviço de Acolhimento Institucional para pessoas idosas gênero feminino dando-lhes assistência alimentar, fornecendo-lhes atividades recreativas, abrigo e proteção."
         },
         {
-            "id": 8,
             "nome": "APAE PORTO SEGURO - BAHIA",
             "user": "apae_bahia",
             "logo": "assets/images/inst.png",
@@ -88,7 +80,6 @@ var db_fakeInstituicoes = {
             "descricao": "Somos uma rede sem fins lucrativos que, há mais de 60 anos, se dedica na defesa dos direitos e na prestação de serviços à pessoa com deficiência no Brasil. A APAE é responsável pela inclusão social em diversos níveis de milhares de pessoas ao longo de sua história. "
         },
         {
-            "id": 9,
             "nome": "Fundação da Terceira Idade Doce Lar",
             "user": "doce_lar",
             "logo": "assets/images/inst.png",
@@ -149,7 +140,7 @@ function carregarInst() {
                     <b>Endereço:</b> ${instInfo.endereco}<br>
                     <b>Categoria:</b> ${instInfo.categoria}
                 </h6>
-                <button type="button" class="btn inst_saibaMais" onclick="setClickInst(${instInfo.id})"><i class="fas fa-plus"></i>Saiba mais</button>
+                <button type="button" class="btn inst_saibaMais" onclick="setClickInst(${i})"><i class="fas fa-plus"></i>Saiba mais</button>
             </span>
         </div>`;
     };
